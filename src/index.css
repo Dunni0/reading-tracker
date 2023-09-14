@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body{
+  background-color: #ffc0cb;
+  font-family: 'Prompt', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  color: rgb(52, 49, 49);
+  max-width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
+.book-list{
+  padding: 0;
+}
+
+/* .book-list ul {
+  padding: 0;
+  list-style: none;
+} */
+
+.book-list li{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #ea7c92;
+  box-shadow: 1px 3px rgb(103, 94, 94);
+  font-weight: bold;
+  list-style: none;
+  padding: 10px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.book-list li:hover{
+  transform: translateX(-10px);
+
+  /* opacity: 0.8; */
+  text-decoration: line-through;
+}
+
+.note, .note2{
+  font-weight: bold;
+  color: rgb(103, 94, 94);
+}
+
+.note2{
+  font-size: small;
+}
+
+.book-list li span{
+  color: rgb(83, 67, 67);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form .title, form .author{
+  background-color: rgb(255, 213, 213);
+  border-radius: 0.5rem;
+  border: 3px solid #ea7c92;
+  margin: 2rem auto;
+  width:60%;
+  height: 7rem;
+  padding: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(103, 94, 94);
+  font-weight: bold;
+}
+
+form .title:hover, form .author:hover{
+  width:55%;
+}
+
+.title::placeholder, .author::placeholder{
+  font-family: 'Prompt', sans-serif;
+  color: rgb(103, 94, 94);
+}
+
+.button{
+  color: rgb(52, 49, 49);
+  border: 3px solid rgb(103, 94, 94);
+  border-radius: 0.5rem;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 7rem;
+  margin: 2rem auto;
+
+  /* border: none; */
+  background-color: #ea7c92;
+  margin-top: 2rem;
+  font-family: 'Prompt', sans-serif;
+  transition: 0.5s;
+}
+
+.button:hover{
+  transform: translateY(-5px);
 }
