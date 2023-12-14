@@ -105,3 +105,12 @@ form .title:hover, form .author:hover{
 .button:hover{
   transform: translateY(-5px);
 }
+
+img{
+  max-width: 300px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
